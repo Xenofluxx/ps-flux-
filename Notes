@@ -1,0 +1,25 @@
+
+scripts -> if 2 commands are named the same but one starts with pre it will be launched first
+        -> run-p, run in parallel
+
+
+JSX -> similar to HTML, compiles to JavaScript. Create-react app will transpire it via babel  
+
+
+                                  SETTINGS
+
+                                  Boilerplate
+
+npx create-react-app ps-flux
+                                  Flux, React-router, bootstrap
+                                  
+npm install flux --legacy-peer-deps react-router-dom@6.3.0 bootstrap@5.1
+
+
+
+                                    Mock Api
+npm install -D cross-env@5.2.0 npm-run-all@4.1.5 json-server@0.15.0
+-D, dev dependencies flag (package.json)
+cross-env, setting enviroment variables
+npm-run-all, runs multiple scripts
+json-server, mock data
