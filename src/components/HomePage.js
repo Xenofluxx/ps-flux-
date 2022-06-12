@@ -6,7 +6,7 @@ import React from 'react';
      return (
         //className instead class because JSX is used
         <div className = "jumbotron" >
-        <h1> Mock App</h1>
+        <h1> <b>Mock App</b></h1>
         <p>React, Flux, and react Router for ultra-responsive web apps.</p>
         <a href= '/about'>About</a>
     </div>

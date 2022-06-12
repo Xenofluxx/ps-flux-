@@ -2,8 +2,24 @@
 scripts -> if 2 commands are named the same but one starts with pre it will be launched first
         -> run-p, run in parallel
 
+JSX -> similar to HTML, compiles to JavaScript. Create-react app will transpire it via babel 
 
-JSX -> similar to HTML, compiles to JavaScript. Create-react app will transpire it via babel  
+Props -> data passed from parent, inmutable(call provided parent function to change it)
+
+State ->  data that changes over time, setState (hooks?)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                                   SETTINGS

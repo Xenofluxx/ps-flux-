@@ -7,7 +7,7 @@ class AboutPage extends React.Component {
         // or use () and <>, the later implies a React.Fragment
         return (
         <>
-            <h2>About</h2>
+            <h2><b>About</b></h2>
             <p>Made with React.</p>
         </>
         );
