@@ -8,18 +8,10 @@ Props -> data passed from parent, inmutable(call provided parent function to cha
 
 State ->  data that changes over time, setState (hooks?)
 
+This (problem) -> Solutions: arrow fuctions, hooks
 
-
-
-
-
-
-
-
-
-
-
-
+Hooks -> useState()
+      -> useEffect(), changes after a render, if useEffect(()=>{ document.title = ${constname} },[constname]) efficiency is better(nly will re-render if changes have been made)
 
 
                                   SETTINGS

@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import * as ReactDOMClient from 'react-dom/client';
 import AboutPage from "./components/AboutPage";
 // index.js determines what files are in your app
 
@@ -9,7 +10,7 @@ import {render} from 'react-dom';
 
 import App from "./components/App";
 
-// Render using React Dom
-// first argument component we want to render
-// second argument, DOM element to place app
-render(<App />, document.getElementById('root'))
+// Updated to React 18
+const container = document.getElementById('root');
+const root = ReactDOMClient.createRoot(container);
+root.render(<App />)
