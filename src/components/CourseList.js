@@ -39,10 +39,10 @@ function CourseList(props){
 // only checked durying development
 CourseList.propTypes = {
     courses: PropTypes.arrayOf(PropTypes.shape({
-        id: PropTypes.number.isRequiered,
+        id: PropTypes.number.isRequired,
         title: PropTypes.string.isRequired,
-        authorId: PropTypes.number.isrequired,
-        category: PropTypes.string.isRequiered
+        authorId: PropTypes.number.isRequired,
+        category: PropTypes.string.isRequired
         })).isRequired
 }
 
