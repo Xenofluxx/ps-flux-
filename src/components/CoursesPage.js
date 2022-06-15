@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import CourseList from "./CourseList";
 //import API
 import {getCourses} from "../api/courseApi";  
+
 
 
 // arrow function better than an anonimus fuction regarding the scope
@@ -25,9 +27,15 @@ function CoursesPage (){
             // set state courses from getCourses courses
             //this.setState({courses: courses})
             setCourses(_courses));
-    } ,[]
+    },[]);
+
+    // props (data) will be passed to CourseList
+     return(
+        <>            
+            <CourseList courses = {courses} /> 
+        </>
     );
-    
+
 
 
 /*componentDidMount(){
@@ -55,32 +63,7 @@ function CoursesPage (){
 // the number must always be the same
 
 // render(){
-    return( 
-        <>
-            <h2><b>Courses</b></h2>
-            <table className = "table">
-                <thead>
-                    <tr>
-                        <th> Title</th>
-                        <th> Author ID</th>
-                        <th> Category</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                    //this.state.
-                        courses.map(course =>{  
-                            return(
-                            <tr key={course.id}>                
-                                <td>{course.title}</td>
-                                <td>{course.authorId}</td>
-                                <td>{course.category}</td>
-                            </tr>
-                        )})}
-                </tbody>
-            </table>
-        </>
-    );
+    
 }
 
 
