@@ -11,7 +11,7 @@ import AboutPage from "./components/AboutPage";
 // imports from a file that const exports
 import {render} from 'react-dom';
 
-// Updated to React 19
+
 const container = document.getElementById('root');
 const root = ReactDOMClient.createRoot(container);
 root.render(
