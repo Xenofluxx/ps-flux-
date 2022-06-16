@@ -5,6 +5,10 @@ import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import Header from './common/Header';
 import CoursesPage from './CoursesPage';
+import Shapes from "./Shapes";
+
+
+
 
 function App(){
     /*
@@ -22,9 +26,11 @@ function App(){
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/courses" element={<CoursesPage/>}></Route>
                 <Route path="/about" element={<AboutPage/>}></Route>
-            </Routes>
+                <Route path="/shapes" element={<Shapes/>}></Route>
+            </Routes>          
         </div>
     );
+   
 }
 
 export default App;
