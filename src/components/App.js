@@ -1,11 +1,12 @@
 // determines which component will render
 import React from 'react';
-import {BrowserRouter,Route, Routes} from "react-router-dom"
+import {Navigate,BrowserRouter,Route, Routes} from "react-router-dom"
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import Header from './common/Header';
 import CoursesPage from './CoursesPage';
 import Shapes from "./Shapes";
+import PageNotFound from "./PageNotFound";
 
 
 function App(){
@@ -17,6 +18,8 @@ function App(){
         return <HomePage/>;
     }
     */
+
+    // Routes is the new Switch
     return(
         <div className = "container-fluid">
             <Header />
@@ -24,7 +27,9 @@ function App(){
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/courses" element={<CoursesPage/>}></Route>
                 <Route path="/about" element={<AboutPage/>}></Route>
-                <Route path="/shapes" element={<Shapes/>}></Route>
+                <Route path="/shapes" element={<Shapes/>}></Route>    
+                <Route path="/about-page" element={<Navigate replace to="/about" />}> </Route>  
+                <Route path="*" element = {<PageNotFound/>}></Route>
             </Routes>          
         </div>
     );

@@ -8,10 +8,10 @@ import {OrbitControls} from "@react-three/drei";
 //document.body.style = 'background: red;';
 
 function Shapes(){
-        return(   
-                
+        
+        return(             
             <Wrapper className = "wrapper">
-                
+            <><h2><b>Rotate me!</b></h2> </>
             <Canvas className ="canvas" camera={{ position: [0,0,10] }}>  
                 <OrbitControls enableZoon = {false}/>                       
                 <ambientLight intensity={0.8}/>
