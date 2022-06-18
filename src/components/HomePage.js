@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link }  from 'react-router-dom';
  // function 
  // Capital letter  -> in JSX, assumed to be React components
  // Lowercase -> HTML, native elements.
@@ -8,7 +9,9 @@ import React from 'react';
         <div className = "jumbotron" >
         <h1> <b>Mock App</b></h1>
         <p>React, Flux, and react Router for ultra-responsive web apps.</p>
-        <a href= '/about'>About</a>
+        <Link to="about" className = "btn btn-primary"> 
+            About 
+        </Link>
     </div>
      );
     

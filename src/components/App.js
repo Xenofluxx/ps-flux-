@@ -8,8 +8,6 @@ import CoursesPage from './CoursesPage';
 import Shapes from "./Shapes";
 
 
-
-
 function App(){
     /*
     function getPage(){

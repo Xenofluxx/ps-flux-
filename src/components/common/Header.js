@@ -1,11 +1,29 @@
 import React from 'react';
+// contrary to <a>, <link> doesnt trigger a page refresh (states)
+import { NavLink} from 'react-router-dom';
 // <nav> -> navigation links
-// <a> ->  defines a hyperlink, 
-function Header(){
+// <NavLink> ->  defines a hyperlink, 
+import "./App.css";
+
+function Header(){  
+
     return(
     <nav>
-        <a href="/">Home</a> | <a href="/about"> About</a> | <a href="/courses"> Courses</a> | <a href="/shapes"> Shapes</a>
-
+        <NavLink  exact="true" to="/" className={({ isActive }) => (isActive ? "link-active" : "link")}  >
+            Home 
+        </NavLink> 
+            {" | "}
+        <NavLink  to="/about" className={({ isActive }) => (isActive ? "link-active" : "link")}> 
+            About
+        </NavLink> 
+            {" | "} 
+        <NavLink to="/courses" className={({ isActive }) => (isActive ? "link-active" : "link")}> 
+            Courses
+        </NavLink> 
+            {" | "}
+        <NavLink to="/shapes" className={({ isActive }) => (isActive ? "link-active" : "link")}> 
+            Shapes
+        </NavLink>
     </nav>
     );
 

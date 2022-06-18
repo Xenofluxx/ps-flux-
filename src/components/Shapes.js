@@ -18,14 +18,8 @@ function Shapes(){
                 <directionalLight position={[-2,8,2]} intensity={1} />
                 <mesh rotation ={[90,0,20]}>
                     <boxBufferGeometry attach ="geometry" args = {[5,5,5]}  />
-                    <meshLambertMaterial attach="material" color="purple" />       
-
-
-
-
-
-                </mesh>
-                
+                    <meshLambertMaterial attach="material" color="purple" />  
+                </mesh>                
             </Canvas>
             </Wrapper> 
               
