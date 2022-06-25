@@ -19,7 +19,7 @@ function CourseList(props){
            
                     {
                     //this.state.
-                        props.courses.map(course =>{  
+                        props.coursespar.map(course =>{  
                             return(                                
                             <tr key={course.id}> 
                                 <td>

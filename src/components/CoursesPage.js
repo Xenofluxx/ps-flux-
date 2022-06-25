@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CourseList from "./CourseList";
+import {Link} from "react-router-dom";
 //import API
 import {getCourses} from "../api/courseApi";  
 
@@ -23,16 +24,19 @@ function CoursesPage (){
     useEffect(()=>{
         //getCourses uses promise based api (fetch, so we use then)
         //async
-        getCourses().then(_courses =>
+        getCourses().then(_coursess =>
             // set state courses from getCourses courses
             //this.setState({courses: courses})
-            setCourses(_courses));
+            setCourses(_coursess));
     },[]);
 
     // props (data) will be passed to CourseList
      return(
-        <>            
-            <CourseList courses = {courses} /> 
+        <>     
+            <CourseList coursespar = {courses} /> 
+            <Link className = "btn btn-primary"  to = "/course">
+                Add Course
+            </Link>
         </>
     );
 

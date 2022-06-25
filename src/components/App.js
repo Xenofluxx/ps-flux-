@@ -30,7 +30,8 @@ function App(){
                 <Route path="/" element={<HomePage />}></Route>
                 <Route path="/courses" element={<CoursesPage/>}></Route>
                 <Route path="/about" element={<AboutPage/>}></Route>
-                <Route path="/course/:slug" element={<ManageCoursePage/>}></Route>                
+                <Route path="/course/:slug" element={<ManageCoursePage/>}></Route>    
+                <Route path="/course" element={<ManageCoursePage/>}></Route>             
                 <Route path="/shapes" element={<Shapes/>}></Route>    
                 <Route path="/about-page" element={<Navigate replace to="/about" />}> </Route>  
                 <Route path="*" element = {<PageNotFound/>}></Route>
