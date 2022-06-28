@@ -24,8 +24,7 @@ function CourseList(props){
                             <tr key={course.id}> 
                                 <td>
                                     <Link to={"/course/" + course.slug }>{course.title} </Link>                                
-                                </td>           
-                                <td>{course.title}</td>
+                                </td> 
                                 <td>{course.authorId}</td>
                                 <td>{course.category}</td>
                             </tr>
@@ -46,7 +45,7 @@ function CourseList(props){
 // specifies data that is accepted on  props
 // only checked durying development
 CourseList.propTypes = {
-    courses: PropTypes.arrayOf(PropTypes.shape({
+    coursespar: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number.isRequired,
         title: PropTypes.string.isRequired,
         authorId: PropTypes.number.isRequired,
