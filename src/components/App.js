@@ -1,5 +1,5 @@
 // determines which component will render
-import React,{useEffect} from 'react';
+import React from 'react';
 import {Navigate,BrowserRouter,Route, Routes,useParams} from "react-router-dom";
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
@@ -9,6 +9,8 @@ import Shapes from "./Shapes";
 import PageNotFound from "./PageNotFound";
 import ManageCoursePage from "./ManageCoursePage";
 import CourseList from './CourseList';
+import{ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 
 function App(){
@@ -25,6 +27,7 @@ function App(){
     // Routes is the new Switch
     return(
         <div className = "container-fluid">
+            <ToastContainer autoclose={3000} hideProgressBar />
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />}></Route>
